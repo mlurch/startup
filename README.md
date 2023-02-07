@@ -7,3 +7,5 @@
 <p> DNS: My domain name is chickenlittle.click. I do not wish to justify myself in this decision. I learned that renting a domain name can be fairly simply but the set up is complicated if you don't know what you are doing. </p>
 
 <p> HTTPS: With this assignment I learned how to request a certificate so that your website can be secure. Secure websites are super important in order to protect information of visitors and of the owners as well. Now in order to go to a subdomain of my website I have to actually have created one. </p>
+
+<p> HTML Intro: I learned about the basic structure of HTML documents and how to add tables and images. It was fairly simple, although I do want to remember that as class is a classification and not the same as a class in object oriented programming at all. </p>
