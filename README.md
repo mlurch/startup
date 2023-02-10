@@ -8,7 +8,7 @@
 <p>This is my server's IP address: <b>3.132.231.194</b>. And this is the command to ssh in: <b>ssh -i [key pair file] ubuntu@3.132.231.194</b>. </p>
 
 ### DNS
-<p>My domain name is <b>chickenlittle.click</b>. I do not wish to justify myself in this decision. I learned that renting a domain name can be fairly simply but the set up is complicated if you don't know what you are doing. </p>
+<p>My domain name is <b>https://chickenlittle.click</b>. I do not wish to justify myself in this decision. I learned that renting a domain name can be fairly simply but the set up is complicated if you don't know what you are doing. </p>
 
 ### HTTPS
 <p>With this assignment I learned how to request a certificate so that your website can be secure. Secure websites are super important in order to protect information of visitors and of the owners as well. Now in order to go to a subdomain of my website I have to actually have created one. </p>
@@ -20,3 +20,7 @@
 ### Simon HTML
 <p>I learned a lot about how the structure of HTML actually works. I think that I am finally starting to get the basic ideas down. By studying the deployment script for this project I also learned a few things about how writing scripts actually works, although this did raise some questions for me as well. I learned about the importance of pushing to GitHub often as well. </p>
 <p> The terminal command to deploy is: <b>./deployFiles.sh -k {path to key} -h {domainname} -s {which service}</b></p>
+
+### CSS
+<p> I learned that sometimes the best teacher is trial and error. There are a lot of ways you can manipulate the structure of HTML with CSS to make visually interesting animations. However, this takes practice and ultimately is a skill to develop over time. </p>
+<p> The link to the most helpful reference guide I used in this assignment was: <b> https://developer.mozilla.org/en-US/docs/Web/CSS/animation </b> </p>
