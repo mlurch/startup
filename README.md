@@ -24,3 +24,7 @@
 ### CSS
 <p> I learned that sometimes the best teacher is trial and error. There are a lot of ways you can manipulate the structure of HTML with CSS to make visually interesting animations. However, this takes practice and ultimately is a skill to develop over time. </p>
 <p> The link to the most helpful reference guide I used in this assignment was: <b> https://developer.mozilla.org/en-US/docs/Web/CSS/animation </b> </p>
+
+
+### CSS: Responsive Display
+<p> I learned that there are several rather difficult elements to making CSS responsive to display size. Of course a very important part is the metadata head that can be included in the HTML, <b> meta name="viewport" content="width=device-width,initial-scale=1" </b> Additionally, the display in CSS can be changed to grid or flex or float to accomplish all sort of different things. </p>
