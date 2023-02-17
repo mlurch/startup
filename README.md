@@ -28,3 +28,6 @@
 
 ### CSS: Responsive Display
 <p> I learned that there are several rather difficult elements to making CSS responsive to display size. Of course a very important part is the metadata head that can be included in the HTML, <b> meta name="viewport" content="width=device-width,initial-scale=1" </b> Additionally, the display in CSS can be changed to grid or flex or float to accomplish all sort of different things. </p>
+
+### StartUp HTML
+<p> I learned the importance of flexibility in changing previous plans. I also learned the importance of creating visuals in helping to streamline and improve your coding process. The great thing about HTML is how easy it is to change things around and create the skeleton of what you want your work to be. This skeleton is also helpful for visualizing and implementing better code and design. </p>
