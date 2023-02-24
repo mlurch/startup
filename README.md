@@ -1,5 +1,3 @@
-# startup
-
 ### GitHub
 <p> What I learned with the GitHub assignment is that it can be really annoying to deal with merge conflicts. The best way to get around this is clear communication with team members and consistency in the way that you are editing something in your repository.</p> 
 
@@ -34,3 +32,6 @@
 
 ### Simon CSS
 <p> I learned that Bootstrap can make your CSS life so easy. Also adding <code>!important</code> to a line of CSS will make it override the parent.</p>
+
+### JS
+<p> I learned how to create functions, especially arrow functions which look something like <code>(a) => a + 1</code>. I also learned how to create classes and object easily. It looks like the following: <code>class Hats {}</code> and inheritance looks like <code>class Ballcap extends Hats{}</code>.</p>
