@@ -38,3 +38,7 @@
 
 #### RegEx
 <p> in order to creat a RegEx object you can use the following syntax <code> const regObj = new RegExp("expression", "flags") </code>. Some of the more useful flags are i (which makes the expression not case sensitive) and g (which performs a global search). Additionally in order to use a regular expression character, such as \b (which represents a break between words etc.) you need to represent it in the string as <code> \\b </code>. Finally, there are functions such as <code>text.match(regObj)</code>, <code>text.replace(regObj ,"replacement String")</code>, <code>text.replaceAll(regObj, "replacement Stirng")</code>, and <code>text.test(regObj)</code> which will return a boolean if the regular expression appears in the text string. </p>
+
+
+#### Rest & Spread 
+<p> Rest allows a function to have an uncertain number of perameters, and you add the <code>...</code> in the function definition. Spread is found in function calls and allows you to split up the parts of an iterable object (like a string or array) into multiple parameters of the function.
