@@ -42,3 +42,11 @@
 
 #### Rest & Spread 
 <p> Rest allows a function to have an uncertain number of perameters, and you add the <code>...</code> in the function definition. Spread is found in function calls and allows you to split up the parts of an iterable object (like a string or array) into multiple parameters of the function.
+
+#### DOM
+<p> It is shockingly uncomplicated to change the DOM around but the methods are so strangely named that it is a little difficult to remember them. Some good ones include: 
+  <li><code>.getElementById("#id")</code></li>
+  <li><code>.querySelectorAll("element")</code></li>
+  <li><code>.textContent = "some text";</code></li>
+  <li><code>.createElement("element")</code></li>
+</p>
