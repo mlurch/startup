@@ -50,3 +50,6 @@
   <li><code>.textContent = "some text";</code></li>
   <li><code>.createElement("element")</code></li>
 </p>
+
+### Simon JS
+<p> It is important to put the <code><script src="scriptName.js"></script></code> at the bottom of the HTML document. You can also use JS to change the CSS of HTML elements through <code>elName.style.backgroundColor</code> etc. </p>
