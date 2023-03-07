@@ -1,5 +1,70 @@
+### The Console
+<p> The following are some helpful commands that can be used in the terminal:</p>
+<li><code>rmdir</code> - Remove a directory</li>
+<li><code>curl</code> - Command line client URL browser</li>
+<li><code>grep</code> - Regular expression search</li>
+<li><code>find</code> - Find files</li>
+<li><code>top</code> - View running processes with CPU and memory usage</li>
+<li><code>df</code> - View disk statistics</li>
+<li><code>less</code> - Interactively output the contents of a file</li>
+<li><code>ps</code> - View the currently running processes</li>
+<li><code>kill</code> - Kill a currently running process</li>
+<li><code>history</code> - Show the history of commands</li>
+<li><code>ping</code> - Check if a website is up</li>
+<li><code>traceroute</code> - Trace the connections to a website</li>
+<li><code>dig</code> - Show the DNS information for a domain</li>
+<li><code>man</code> - Look up a command in the manual</li>
+<p></p>
+<p>Some other helpful special characters and commands are also as follows:</p>
+<li><code>|</code> - Take the output from the command on the left and pipe, or pass, it to the command on the right</li>
+<li><code>></code> - Redirect output into a file, overwrites if the file already exists</li>
+<li><code>>></code> - Redirect output into a file, appends to the file if it already exits</li>
+<li><code>CTRL-R</code> - use type ahead to find previous commands</li>
+
+### VIM
+<p>Here are a few commands that are helpful in VIM, which you can open by typing <code>vi filename.txt</code> into the console</p>
+<li><code>:h</code> - Help</li>
+<li><code>i</code> - Enter insert mode</li>
+<li><code>u</code> - Undo</li>
+<li><code>CTRL-R</code> - Redo</li>
+<li><code>gg</code> - Go to the beginning of the file</li>
+<li><code>G</code> - Go to end of file</li>
+<li><code>/</code> - Search for text that you type after /</li>
+<li><code>n</code> - Next search match</li>
+<li><code>N</code> - Previous search match</li>
+<li><code>v</code> - Visually select text</li>
+<li><code>y</code> - Yank or copy selected text to clipboard</li>
+<li><code>p</code> - Paste clipboard</li>
+<li><code>CTRL-W</code> - Split window vertically</li>
+<li><code>CTRL-ww</code> - Toggle windows</li>
+<li><code>CTRL-wq</code> - Close current window</li>
+<li><code>:e</code> - Open a file. Type ahead available. If you open a directory you can navigate it in the window.</li>
+<li><code>:w</code> - Write/save file</li>
+<li><code>:q</code> - Quite, exit file</li>
+<li><code>:q!</code> - Exit file without saving</li>
+
+### Git
+<li><code>git init</code> - This initializes a directory as a Git repository</li>
+<li><code>git status</code> - Tells you what is happening in Git</li>
+<li><code>git add .</code> - Adds git tracking for the versions of all files in the cwd</li>
+<li><code>git commit -am "comment here"</code> - Add a file to the Git, and commit a version with a message</li>
+<li><code>git log</code> - Shows commits with associated comments as well</li>
+<li><code>git checkout</code> - Allows you to switch back to a previous version (or back to the master branch) with the use of a SHA (unique identifier for each commit)</li>
+<li><code>git diff HEAD HEAD~(number of commits back you wish to reference)</code> - Lets you look at the differences between two different versions of a file.</li>
+<li><code>git branch (name of the branch)</code> - Creates a new branch</li>
+<li><code>git checkout (name of the branch)</code> - Allows you to begin working on the branch specified</li>
+<li><code>git merch (name of the branch)</code> - Mergest the branch you are currently on with the branch named in the command</li>
+
 ### GitHub
 <p> What I learned with the GitHub assignment is that it can be really annoying to deal with merge conflicts. The best way to get around this is clear communication with team members and consistency in the way that you are editing something in your repository.</p> 
+<p> The following are also some useful commands to know with GitHub:</p>
+<li><code>git clone (url)</code> - Will clone a copy of the GitHub repo to your device</li>
+<li><code>git push</code></li>
+<li><code>git pull</code></li>
+<li><code>git fetch</code> - Get the latest information about the changes on GitHub without changing the local repo</li>
+<li><code>git status</code> - See the difference between the clones</li>
+<p></p>
+<p>As a side note, forking is similar to cloning a repo, but it copies to your GitHub instead of to your local machine</p>
 
 ### AWS
 <p>With a little help from someone with a lot more money than I have, it is actually fairly simple to launch a nice webserver. </p>
