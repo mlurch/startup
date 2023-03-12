@@ -273,3 +273,117 @@
 
 #### Simon JS
 <p> It is important to put the <code><script src="scriptName.js"></script></code> at the bottom of the HTML document. You can also use JS to change the CSS of HTML elements through <code>elName.style.backgroundColor</code> etc. </p>
+
+### URL
+<p> Here is what the URL represents: <code>scheme://domain name:port/path?parameters#anchor</code></p>
+<table>
+<tr><th>part</th><th>example</th><th>meaning</th></tr>
+<tr><td>scheme</td><td>https</td><td>The protocol required to ask for the resource. For web applications, this is usually HTTPS. But it could be any internet protocol such as FTP or MAILTO.</td></tr>
+<tr><td>domain name</td><td>byu.edu</td><td>The domain name that owns the resource represented by the URL.</td></tr>
+<tr><td>port</td><td>3000</td><td>The port specifies the numbered network port used to connect to the domain server. Lower number ports are reserved for common internet protocols, higher number ports can be used for any purpose. The default port is 80 if the scheme is HTTP, or 443 if the scheme is HTTPS.</td></tr>
+<tr><td>path</td><td>/school/byu/user/8014</td><td>The path to the resource on the domain. The resource does not have to physically be located on the file system with this path. It can be a logical path representing endpoint parameters, a database table, or an object schema.</td></tr>
+<tr><td>parameters</td><td>filter=names&highlight=intro,summary</td><td>The parameters represent a list of key value pairs. Usually it provides additional qualifiers on the resource represented by the path. This might be a filter on the returned resource or how to highlight the resource. The parameters are also sometimes called the query string.</td></tr>
+<tr><td>anchor</td><td>summary</td><td>	The anchor usually represents an sub-location in the resource. For HTML pages this represents a request for the browser to automatically scroll to the element with an ID that matches the anchor. The anchor is also sometimes called the hash, or fragment ID.</td></tr>
+</table>
+<p></p>
+<p>Other things to know are that a Uniform Resource Name (URN) is a unique name that has no location info and that a Uniform Resource Identifier (URI) is a general resource identifier that could refer to a URL or a URN.</p>
+
+### Ports
+<p>This is the standard usage for port numbers:</p>
+<ul><li>0-1023: standar protocols (web service should avoid these ports unless providing protocol represented by the standard.</li>
+<li>1024-49151: ports that have been assigned to requesting entities, very common for the ports to be used by services running internally on a device</li>
+<li>49152-65535: dynamic, used to create dynamic connections to a device</li></ul>
+<p></p>
+<p>Here are some common ports!</p>
+<table>
+<tr><th>port</th><th>protocol</th></tr>
+<tr><td>20</td><td>File Transfer Protocol (FTP) for data tranfer</td></tr>
+<tr><td>22</td><td>Secure Shell (SSH) for connecting to remote devices</td></tr>
+<tr><td>25</td><td>Simple Mail Transfer Protocol (SMTP) for sending email</td></tr>
+<tr><td>53</td><td>Domain Name System (DNS) for looking up IP addresses</td></tr>
+<tr><td>80</td><td>Hypertext Transfer Protocol (HTTP) for web requests</td></tr>
+<tr><td>110</td><td>Post Office Protocol (POP3) for retrieving email</td></tr>
+<tr><td>123</td><td>Network Time Protocol (NTP) for managing time</td></tr>
+<tr><td>161</td><td>Simple Network Management Protocol (SNMP) for managing network devices such as routers or printers</td></tr>
+<tr><td>194</td><td>Interen Relay Chat (IRC) for chatting</td></tr>
+<tr><td>443</td><td>HTTP Secure (HTTPS) for secure web request</td></tr>
+</table>
+
+### HTTP
+<p>This is the general syntax of an HTTP request:</p>
+
+```
+
+<verb> <url path, parameters, anchor> <version>
+[<header key:value>]*
+[
+  <body>
+]
+
+```
+
+<p>And this is the syntax of an HTTP response:</p>
+
+```
+
+<version> <status code> <status string>
+[<header key:value>]*
+[
+  <body>
+]
+
+```
+
+#### HTTP Verbs
+<table>
+<tr><th>Verb</th><th>Meaning</th></tr>
+<tr><td>GET</td><td> Get the requested resource. This can be a single resource or a resource that represents a list of resources</td></tr>
+<tr><td>POST</td><td>Create a new resource. The body of the request had the resource in it and the response should include a unique ID of the newly created resource.</td></tr>
+<tr><td>PUT</td><td>Update a resource, either the URL path, HTTP header, or body must have the unique ID of the resource being updated. The body of the request should contain the updated resource, the body of the response may contain the resulting updated resource.</td></tr>
+<tr><td>DELETE</td><td>Delete a resourcce, either the URL path or HTTP header must contain the unique ID of the resource to delete.</td></tr>
+<tr><td>OPTIONS</td><td>Get metadata about a resource, usually only HTTP headers are returned, the resource itself is not returned.</td></tr>
+</table>
+
+#### HTTP Status Codes
+<p>These are the 5 blocks of the status codes</p>
+<ul><li>1xx - informational</li>
+<li>2xx- success</li>
+<li>3xx - Redirect to some other location, or that the previously cached resource is still valid</li>
+<li>4xx - Client errors, the request is invalid.</li>
+<li>5xx - Server errors, the request cannot be satisfied due to an error on the server</li></ul>
+<p></p>
+<p>And here are some of the more common codes:</p>
+<table>
+<tr><th>code</th><th>text</th><th>meaning</th></tr>
+<tr><td>100</td><td>continue</td><td>the service is working on the request</td></tr>
+<tr><td>200</td><td>success</td><td>the requested resource was found and returned</td></tr>
+<tr><td>201</td><td>created</td><td>the request was successful and a new resource was created</td></tr>
+<tr><td>204</td><td>no content</td><td>the request was successful but no resource is returned</td></tr>
+<tr><td>304</td><td>not modified</td><td>the cached version of the resource is still valid</td></tr>
+<tr><td>307</td><td>permanent redirect</td><td>the resource is no longer at the requested location, the new location is specified in the response location header</td></tr>
+<tr><td>308</td><td>temporary redirect</td><td>the resource is temporarily located at a different location, the temporary location is specified in the response location header</td></tr>
+<tr><td>400</td><td>bad request</td><td>the request was malformed or invalid</td></tr>
+<tr><td>401</td><td>unauthorized</td><td>the request did not provide a valid authentication token</td></tr>
+<tr><td>403</td><td>forbidden</td><td>the provided authentication token is not authorized for the resource</td></tr>
+<tr><td>404</td><td>not found</td><td>an unknown resource was requested</td></tr>
+<tr><td>408</td><td>request timeout</td><td>the request takes too long</td></tr>
+<tr><td>409</td><td>conflict</td><td>the provided resource represents an out of date cersion of the resouce</td></tr>
+<tr><td>429</td><td>too many requests</td><td>the client is making too many requests in too short a period of time</td></tr>
+<tr><td>500</td><td>internal server error</td><td>the server failed to properly process the request</td></tr>
+<tr><td>503</td><td>service unavailable</td><td>the server is temporarliy down the client should try again with an expoential back off</td></tr>
+</table>
+
+#### HTTP Headers
+<table>
+<tr><th>header</th><th>meaning</th></tr>
+<tr><td>Authorization</td><td>a token that authorized the user making the request</td></tr>
+<tr><td>Accept</td><td>what content format the client accepts, this may include wildcards</td></tr>
+<tr><td>Content-Type</td><td>the format of the response content, these are described using standard MIME types</td></tr>
+<tr><td>Cookie</td><td>key value pairs that are generated by the server and stored on the client</td></tr>
+<tr><td>Host</td><td>the domain name of the server, this is required in all requests</td></tr>
+<tr><td>Origin</td><td>identifies the origin that caused the request, a host may only allow requests from specific origins</td></tr>
+<tr><td>Cccess-Control-Allow-Origin</td><td>server response of what origins can make a request, this may include a wildcard</td></tr>
+<tr><td>Content-Length</td><td>the number of bytes contained in the response</td></tr>
+<tr><td>Cache-Control</td><td>tells the client how it can cache the response</td></tr>
+<tr><td>User-Agent</td><td>the client application making the request</td></tr>
+</table>
