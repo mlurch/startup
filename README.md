@@ -404,3 +404,17 @@ fetch('https://url')
 
 ```
 
+### Service Design
+<p>A useful tool for modeling a service (the application's primary objects and the interactions of the objects) us sequencediagram.org</p>
+
+#### Endpoints
+<p>Endpoints should be grammatical (noun verb relationship of HTTP resources), readable (clearly readable path in the URL), and discoverable (resources are aggregated and separate endpoints can be accessed by other endpoints ex. store endpoint contains employee endpoint), compatible (add functionality wihtout breaking existing clients), simple (endpoints should do one thing, keep focused on primary resources), and documented (initial drafts of endpoint documentation will help you produce a better end result)</p>
+
+#### RPC
+<p>RPC stands for Remot Procedure Calls, generally just used with POST. Map direcyly to function calls that might exist within the server.</p>
+
+#### REST
+<p>REST stands for Representational State Transfer, always uses HTTP verbs that act on a resource</p>
+
+#### GraphQL
+<p>focuses on the manipulation of data instead of a function call (which is RPC) or a resource (REST). There is one endpoint: the query endpoint.</p>
