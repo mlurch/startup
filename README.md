@@ -418,3 +418,6 @@ fetch('https://url')
 
 #### GraphQL
 <p>focuses on the manipulation of data instead of a function call (which is RPC) or a resource (REST). There is one endpoint: the query endpoint.</p>
+
+### Simon Service
+<p>It is really important to provide a way for the scores to be stored locally and in the server as well. To convert your application to a service, you need to move your front end files into a public folder, and to add a javascript file that uses Node and Node express.</p>
