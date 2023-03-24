@@ -424,4 +424,4 @@ fetch('https://url')
 
 
 ### Simon DB
-<p> It is important while trying to connect an application to a database to make sure that you store your credentials in a safe place where other people cannot access them. This can be done by storing them in the environment variables. This must be done on your local machine as well as the remote machine where your service is being run. The command to change those variables is  <code>sudo vi /etc/environment</code>. In your code to create your Mongo url it will look something like this: <code>mongodb+srv://<user>:<password>@<hostname>/</code>.</p>
+<p> It is important while trying to connect an application to a database to make sure that you store your credentials in a safe place where other people cannot access them. This can be done by storing them in the environment variables. This must be done on your local machine as well as the remote machine where your service is being run. The command to change those variables is  <code>sudo vi /etc/environment</code>. In your code to create your Mongo url it will look something like this: <code>mongodb+srv://&gt;user&lt;:&gt;password&lt;@&gt;hostname&lt;/</code>.</p>
