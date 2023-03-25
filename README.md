@@ -422,6 +422,8 @@ fetch('https://url')
 ### Simon Service
 <p>It is really important to provide a way for the scores to be stored locally and in the server as well. To convert your application to a service, you need to move your front end files into a public folder, and to add a javascript file that uses Node and Node express.</p>
 
-
 ### Simon DB
 <p> It is important while trying to connect an application to a database to make sure that you store your credentials in a safe place where other people cannot access them. This can be done by storing them in the environment variables. This must be done on your local machine as well as the remote machine where your service is being run. The command to change those variables is  <code>sudo vi /etc/environment</code>. In your code to create your Mongo url it will look something like this: <code>mongodb+srv://&lt;user&gt;:&lt;password&gt;@&lt;hostname&gt;/</code>.</p>
+
+### Simon Login
+<p> You need to create seperate endpoints for things that are accessible when logged in and when not logged in. One MUST hash passwords before storing them in databases. </p>
