@@ -427,3 +427,6 @@ fetch('https://url')
 
 ### Simon Login
 <p> You need to create seperate endpoints for things that are accessible when logged in and when not logged in. One MUST hash passwords before storing them in databases. </p>
+
+### Simon WebSockets
+<p> When using websockets, built-in and important protocols are the ping and pong protocols. They are important for being able to communicate between sockets. They can also be used to keep the websocket connection open longer than it does by default. This is essential to take into account as the default connection isn't very long.</p>
