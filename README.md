@@ -430,3 +430,28 @@ fetch('https://url')
 
 ### Simon WebSockets
 <p> When using websockets, built-in and important protocols are the ping and pong protocols. They are important for being able to communicate between sockets. They can also be used to keep the websocket connection open longer than it does by default. This is essential to take into account as the default connection isn't very long.</p>
+
+### React CLI
+<p>Here are some helpful commands to set up a react application easily from the CLI.</p>
+<li><code>npx create-react-app your-dir-name</code></li>
+<li><code>npx nano-react-app your-dir-name</code></li>
+<li><code>cd your-dir-name</code></li>
+<li><code>code .</code></li>
+<li><code>npm start</code></li>
+<li><code>npm run build</code> - this transpiles, minifies, and injects proper JS and outputs it into a subdirectory named build</li>
+<p></p>
+<p>Here are some things that you probably should do once working from this automatically created application:</p>
+<ol>1.Replace icon files with your own icons</ol>
+<ol>2.Modify the manifest.json and package.json to contain application name</ol>
+<ol>3.Modify README.md</ol>
+<ol>4.Modify index.html to contain proper title and metadata</ol>
+<p></p>
+<p>Here are some other commands you can from the CLI to clean up the application:</p>
+<li><code>npm uninstallnpm uninstall @testing-library/jest-dom @testing-library/react @testing-library/user-event</code></li>
+<li><code>rm src/setupTests.js src/App.test.js</code></li>
+<li><code>npm uninstall web-vitals</code></li>
+<li><code>rm src/reportWebVitals.js</code></li>
+<li>remove <code>import reportWebVitals from './reportWebVitals';</code> &amp; <code>reportWebVitals();</code> from index.js</li>
+<li>change .js files that include JSX to have the .jsx extension</li>
+<p></p>
+
