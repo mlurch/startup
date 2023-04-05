@@ -441,10 +441,10 @@ fetch('https://url')
 <li><code>npm run build</code> - this transpiles, minifies, and injects proper JS and outputs it into a subdirectory named build</li>
 <p></p>
 <p>Here are some things that you probably should do once working from this automatically created application:</p>
-<ol>1.Replace icon files with your own icons</ol>
-<ol>2.Modify the manifest.json and package.json to contain application name</ol>
-<ol>3.Modify README.md</ol>
-<ol>4.Modify index.html to contain proper title and metadata</ol>
+<ol>1. Replace icon files with your own icons</ol>
+<ol>2. Modify the manifest.json and package.json to contain application name</ol>
+<ol>3. Modify README.md</ol>
+<ol>4. Modify index.html to contain proper title and metadata</ol>
 <p></p>
 <p>Here are some other commands you can from the CLI to clean up the application:</p>
 <li><code>npm uninstallnpm uninstall @testing-library/jest-dom @testing-library/react @testing-library/user-event</code></li>
