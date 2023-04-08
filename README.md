@@ -455,3 +455,5 @@ fetch('https://url')
 <li>change .js files that include JSX to have the .jsx extension</li>
 <p></p>
 
+### React
+<p>In order for your react application to work properly you need the right node modules installed. Additionally you need to install react bootstrap too.</p>
