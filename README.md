@@ -419,6 +419,31 @@ fetch('https://url')
 #### GraphQL
 <p>focuses on the manipulation of data instead of a function call (which is RPC) or a resource (REST). There is one endpoint: the query endpoint.</p>
 
+### Node.js
+<p>NVM stands for Node Version Manager. The following are some helpful commandline commands for setting up Node.js on your computer.</p>
+
+```
+
+nvm install lts
+nvm use lts
+
+npm init -y
+
+npm install [any package you want, such as http, ws, mongodb, express, cookie-parser]
+
+```
+
+<p></p>
+
+### Express
+<p>Express provides support for the following:
+<list>
+<li>1. Routing requests for service endpoints</li>
+<li>2. Manipulating HTTP requests with JSON body content</li>
+<li>3. Generating HTTP responses</li>
+<li>4. Using middleware to add functionality</li>
+</list></p>
+
 ### Simon Service
 <p>It is really important to provide a way for the scores to be stored locally and in the server as well. To convert your application to a service, you need to move your front end files into a public folder, and to add a javascript file that uses Node and Node express.</p>
 
